@@ -8,10 +8,39 @@
     <title>Piggy Dice</title>
   </head>
   <body>
-    <div class="container-fluid">
-      Player One Score:  <p id="pl1Score"></p> Computer Score: <p id="comScore"></p>
-          <button type="button" id="pl1rollDice" class="btn btn-light">ROLL!</button>
-          <button type="submit" id="pl1Hold" class="btn btn-dark">Hold!</button>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 left">
+          <div class="row">
+            <div class="col-sm-12 innerLeft">
+              <h2 id="playerAlert"> Click roll to start!</h2>
+              <p id="buttons">
+                <button type="button" id="pl1rollDice" class="btn btn-info">ROLL!</button>
+                <button type="submit" id="pl1Hold" class="btn btn-info">Hold!</button>
+              </p>
+              <h4>Player One Score:</h4>
+              <h5 id="pl1Score"> 0 </h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 right">
+          <div class="row">
+            <div class="col-sm-12 innerRight">
+              <h2 id="computerAlert"> </h2>
+              <h3 id="competitionTxt"> Are you ready to go? </h3>
+              <p id="competitionPig"> <img src="img/neutral.gif"> </p>
+              <h4>Computer Score:</h4>
+              <h5 id="comScore"> 0 </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <button type="submit" id="newGame" class="btn btn-danger trigger">Restart?</button>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
